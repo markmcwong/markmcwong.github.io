@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mark Wong - Full Stack Developer Hobbyist</title>
+	<meta name="Description" content="I am a full-stack developer hobbyist living in United Arab Emirates. I love art and getting inspiration from beautiful design, spending time to create amazing microinteraction for my users. A mac-OS lover.">
+	<meta name="Keywords" content="Mark Wong, Wong">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="favicons/favicon.ico" />
+
+	<!-- For new browsers - multisize ico  -->
+	<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicons/favicon.ico">
+
+	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/favicon-152.png">
+
+	<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/favicon-144.png">
+
+	<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/favicon-120.png">
+
+	<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/favicon-114.png">
+
+	<!-- For iPhone 6+ -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="favicons/favicon-180.png">
+
+	<!-- For first- and second-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/favicon-72.png">
+
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="favicons/favicon-57.png">
+
+	<!-- For Old Chrome -->
+	<link rel="icon" href="favicons/favicon-32.png" sizes="32x32">
+
+	<!-- For IE10 Metro -->
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="favicons/favicon-144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Chrome for Android -->
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" sizes="192x192" href="favicons/favicon-192.png">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.css" as="style" onload="this.rel='stylesheet'" />
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="stylesheet.css" as="style" onload="this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	</noscript>
+
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/CSSPlugin.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/ScrollToPlugin.min.js" defer></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/TweenMax.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/vendors/scrolloverflow.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.8/jquery.fullPage.min.js" defer></script>
+
+	<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+	<nav>
+		<a class="name" style="margin-top: 15px; position: absolute">Mark Wong</a>
+		<ul id="menu" style="float: right; width:90%">
+			<li><a href="#home">HOME</a></li>
+			<li><a href="#profile">PROFILE</a></li>
+			<li><a href="#experience">EXPERIENCE</a></li>
+			<li><a href="#skillset">SKILLSET</a></li>
+			<li><a href="#education">EDUCATION</a></li>
+		</ul>
+	</nav>
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<label for="nav-trigger" id="trigger">☰</label>
+	<!-- this overlays the slides container -->
+	<div class="overlay">
+		<div class="ui centered aligned grid" style="margin: 0;">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150vh" height="50%" viewBox="0 0 1366 768">
+				<g class="landing-page__screen">
+					<defs>
+						<clipPath id="monitorEdgeMask">
+							<path class="monitorEdgeMask" fill="#494D5D" d="M559.7,79h-520C32.5,79,27,84.6,27,91.8V403h546V91.8C573,84.6,566.9,79,559.7,79z" />
+						</clipPath>
+					</defs>
+					<g class="monitorGroup" opacity="1" transform="translate(310,125) scale(1.25)" id="monitor">
+						<g class="monitorStandGroup" clip-path="url(#monitorStandMask)">
+							<path class="monitorStand" fill="#FFFAEB" d="M386.3,512H374l-20.7-57h-106L226,512h-12.3c-2.6,0-4.7,1.9-4.7,4.5s2.1,4.5,4.7,4.5       h172.7c2.6,0,4.7-1.9,4.7-4.5S388.9,512,386.3,512z" />
+						</g>
+						<polygon class="monitorStandShadow" fill="#D9D7D3" points="357.4,467 242.6,467 247.1,455 353.1,455  " />
+						<g class="monitorEdgeGroup" clip-path="url(#monitorEdgeMask)">
+							<path class="monitorEdge" fill="#494D5D" d="M559.7,79h-520C32.5,79,27,84.6,27,91.8V403h546V91.8C573,84.6,566.9,79,559.7,79z" />
+							<path class="monitorScreen" fill="#ffffff" opacity="0.95" d="M544.5,383.3h-489c-3.8,0-7-3.1-7-7v-271c0-3.8,3.2-7,7-7h489c3.8,0,7,3.2,7,7v271         C551.5,380.1,548.3,383.3,544.5,383.3z" />
+						</g>
+						<path class="monitorBottom" fill="#FFFAEB" d="M573,403v39c0,7.1-6.1,13-13.3,13h-520c-7.2,0-12.7-5.9-12.7-13v-39H573z" />
+
+						<circle class="monitorLogo" fill="#A4ACBB" cx="300" cy="426" r="10" />
+						<g class="logo" transform="translate(-10, -65) scale(1.25) matrix(1, 0, 0, 1, 0, 0)">
+							<path id="m1" class="cls-1" d="M130.843,252.444l-0.92-.391,34.822-81.911,0.921,0.391Z" />
+							<path id="m2" class="cls-1" d="M164.616,170.32l0.768-.64,25,30-0.768.64Z" />
+							<path id="m3" class="cls-1" d="M190.39,200.312l-0.78-.624,24-30,0.78,0.624Z" />
+							<path id="middle" class="cls-1" d="M214.546,169.209l0.908-.418,74,161-0.908.418Z" style="&#10;    transform: translate(-1px,0px);&#10;" />
+							<path id="ma" class="cls-1" d="M289.4,328.293l-0.81-.586,21-29,0.81,0.586Z" style="&#10;    transform: translate(-1.5px,2px);&#10;" />
+							<path id="mb" class="cls-1" d="M309.611,299.314l0.778-.628,25,31-0.778.628Z" style="&#10;    transform: translate(-1.5px,2px);&#10;" />
+							<path id="mc" class="cls-1" d="M335.458,330.2l-0.916-.4,35-80,0.916,0.4Z" style="&#10;    transform: translate(-1.5px,2px);&#10;" />
+							<path id="cross" class="cls-1" d="M275.705,193.287l0.917,0.4L228.3,305.15l-0.917-.4Z" />
+						</g>
+					</g>
+				</g>
+			</svg>
+
+		</div>
+	</div>
+
+	<div id="fullpage">
+		<div class="section vertical-scrolling ui center aligned grid home" data-anchor="home">
+			<div class="ui button" id="popup" data-title="A Reminder" data-content="You can scroll with touchpad gestures or arrows"></div>
+			<div class="wrapper" style="opacity: 0.25; height: 100vh; width: 100vw; position: absolute; top: 0; left: 0; z-index:0">
+			</div>
+			<div class="centered aligned column landing-page__div" style="margin-top: -40vh; text-align: center !important;z-index: 1">
+				<h1 class="landing-page__title animated">MARK WONG</h1>
+				<h2 class="landing-page__subtitle">
+					I am Mark - a 15-year old tech enthusiast.<br>
+					And a full-stack developer hobbyist.
+				</h2>
+			</div>
+			<h4 class="white animated" style="position:absolute; bottom: 15px; right: 15px">Coded & Designed by Me!</h4>
+		</div>
+		<div class="section vertical-scrolling profile" data-anchor="profile">
+			<div class="ui centered middle align grid">
+				<div class="doubling nine wide computer only column">
+					<h1 class="profile-page__title white">Profile</h1>
+					<h1 class="quote">Design is a journey of discovery. - Derek Parker</h1>
+					<div class="ui three column grid profile__grid">
+						<div class="column">
+							<h2>About Me</h2>
+							<h4 class="thin" style="margin-top: 0; line-height: 1.64;">I am a full-stack developer hobbyist living in United Arab Emirates. I love art and getting inspiration from beautiful design, spending time to create amazing microinteraction for my users. A mac-OS lover.</h4>
+						</div>
+						<div class="column">
+							<div class="ui fade reveal centered middle aligned grid" style="height: 100%">
+								<div class="visible content">
+									<img class="ui medium rotate reveal circular image" data-src="face.jpg" />
+								</div>
+								<div class="hidden content column" style="width: 100%;height: 100%;display: table;">
+									<p style="vertical-align:middle; display: table-cell">You found me!</p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<h2>Details</h2>
+							<h3>Name:</h3>
+							<h4 class="thin">Mark Wong</h4>
+							<h3>Email:</h3>
+							<a href="mailto:markmcwong@yahoo.com"><h4 class="thin" style="margin-top:-10px">markmcwong@yahoo.com</h4></a>
+						</div>
+					</div>
+				</div>
+				<div class="twelve wide mobile only column">
+					<h1 class="profile-page__title white">Profile</h1>
+					<h1 class="quote">Design is a journey of discovery. - Derek Parker</h1>
+					<div class="ui two column stackable grid profile__grid">
+						<div class="sixteen wide column">
+							<h2>About Me</h2>
+							<h4 class="thin" style="margin-top: 0; line-height: 1.64;">I am a full-stack developer hobbyist living in United Arab Emirates. I love art and getting inspiration from beautiful design, spending time to create amazing microinteraction for my users. A mac-OS lover.</h4>
+						</div>
+						<div class="ui equal width grid">
+							<div class="column">
+								<h2>Details</h2>
+								<h3>Name:</h3>
+								<h4 class="thin">Mark Wong</h4>
+								<h3>Email:</h3>
+								<a href="mailto:markmcwong@yahoo.com"><h4 class="thin" style="margin-top:-10px">markmcwong@yahoo.com</h4></a>
+							</div>
+							<div class="column">
+								<div class="ui fade reveal centered middle aligned grid">
+									<div class="visible content">
+										<img class="ui small rotate reveal circular image" data-src="face.jpg" />
+									</div>
+									<div class="hidden content column" style="margin-top: 10px;width: 100%;height: 100%;display: table;">
+										<p style="vertical-align:middle; display: table-cell">You found me!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section fp-auto-height-responsive vertical-scrolling experience" data-anchor="experience">
+			<div class="ui centered middle align grid" style="margin-top: 10vh">
+				<div class="doubling six wide column computer only">
+					<h1 class="blue profile-page__title">Experience</h1>
+					<div class="Experience-page__awards ui grid" style="margin-top: 20px">
+						<h1 class="row" style="font-size: 2.5rem; border-bottom: 1px rgba(0,0,0,0.25) solid;">Recent Achievements</h1>
+						<div class="row">
+							<h2>GEMS Citizens of Tomorrow Innovation 2016</h3>
+							<h4>1st Place</h4>
+							<h4>June 2016, Emirates NBD</h4>
+						</div>
+						<div class="row">
+							<h2>IT Marathon - IT Contest</h2>
+							<h4>1st Place</h4>
+							<h4>June 2016, United Arab Emirates University</h4>
+						</div>
+						<div class="row">
+							<h2>Mashreq-GEMS Mobile App Development Challenge</h2>
+							<h4>Finalist</h4>
+							<h4>2014 & 2015, Mashreq Bank</h4>
+						</div>
+						<div class="row">
+							<h2>Second Interschool Scratch Competition</h2>
+							<h4>3rd Place</h4>
+							<h4>May 17th 2015, Abu Dhabi University</h4>
+						</div>
+						<div class="row">
+							<h2>Microsoft Student Ambassador Program</h2>
+							<h4>5th Place</h4>
+							<h4>May 2015, Microsoft</h4>
+						</div>
+						<div class="row">
+							<a id="others-button"><h2>Others</h2><h2>></h2></a>
+						</div>
+						<div id='grow'>
+							<div class='ui grid animated measuringWrapper'>
+								<div class="row">
+									<h2>Makers Day</h2>
+									<h4>2015 & 2016, Gems Education</h4>
+								</div>
+								<div class="row">
+									<h2>Recycle and Innovate Contest</h2>
+									<h4>Participant</h4>
+									<h4>November 25th, Abu Dhabi Education Council</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="doubling eight wide column mobile only">
+					<h1 class="blue profile-page__title">Experience</h1>
+					<div class="Experience-page__awards ui grid" style="margin-top: 20px">
+						<h1 class="row" style="font-size: 2.5rem; border-bottom: 1px rgba(0,0,0,0.25) solid;">Recent Achievements</h1>
+						<div class="row">
+							<h2>GEMS Citizens of Tomorrow Innovation 2016</h3>
+							<h4>1st Place</h4>
+							<h4>June 2016, Emirates NBD</h4>
+						</div>
+						<div class="row">
+							<h2>IT Marathon - IT Contest</h2>
+							<h4>1st Place</h4>
+							<h4>June 2016, United Arab Emirates University</h4>
+						</div>
+						<div class="row">
+							<h2>Mashreq-GEMS Mobile App Development Challenge</h2>
+							<h4>Finalist</h4>
+							<h4>2014 & 2015, Mashreq Bank</h4>
+						</div>
+						<div class="row">
+							<h2>Second Interschool Scratch Competition</h2>
+							<h4>3rd Place</h4>
+							<h4>May 17th 2015, Abu Dhabi University</h4>
+						</div>
+						<div class="row">
+							<h2>Microsoft Student Ambassador Program</h2>
+							<h4>5th Place</h4>
+							<h4>May 2015, Microsoft</h4>
+						</div>
+						<div class="row">
+							<a id="others-button"><h2>Others</h2><h2>></h2></a>
+						</div>
+						<div id='grow'>
+							<div class='ui grid animated measuringWrapper'>
+								<div class="row">
+									<h2>Makers Day</h2>
+									<h4>2015 & 2016, Gems Education</h4>
+								</div>
+								<div class="row">
+									<h2>Recycle and Innovate Contest</h2>
+									<h4>Participant</h4>
+									<h4>November 25th, Abu Dhabi Education Council</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui centered middle align grid" style="margin-bottom: 100px">
+				<div class="doubling six wide column computer only">
+					<div class="Experience-page__awards ui grid" style="margin-top: 20px">
+						<h1 class="row" style="font-size: 2.5rem; border-bottom: 1px rgba(0,0,0,0.25) solid;">Representative</h1>
+						<div class="row">
+							<h2>Form Representative & Prefect</h3>
+							<h4>2016-</h4>
+						</div>
+						<div class="row">
+							<h2>Vice House Captain</h3>
+							<h4>2013-2015</h4>
+						</div>
+					</div>
+				</div>
+				<div class="doubling eight wide column mobile only">
+					<div class="Experience-page__awards ui grid" style="margin-top: 20px">
+						<h1 class="row" style="font-size: 2.5rem; border-bottom: 1px rgba(0,0,0,0.25) solid;">Representative</h1>
+						<div class="row">
+							<h2>Form Representative & Prefect</h3>
+							<h4>2016-</h4>
+						</div>
+						<div class="row">
+							<h2>Vice House Captain</h3>
+							<h4>2013-2015</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section vertical-scrolling skillset" data-anchor="skillset">
+			<div class="ui centered middle align grid" style="margin-top: 10vh">
+				<div class="eight wide column computer only">
+					<h1 class="white profile-page__title">Skillset</h1>
+					<div class="ui middle centered aligned two column grid" style="border-bottom: 1px solid white;">
+						<div class="middle centered aligned column">
+							<h1 class="white" style="margin-top: 50px">Most Experienced With</h1>
+							<h3 class="thin" style="line-height: 1.75">HTML (Include Jade)</br>
+							CSS (Include Sass & Stylus)</br>
+							Javascript & JQuery</br>
+							REST API</br>
+						  UI/UX Design</h3>
+						</div>
+						<div class="column">
+							<img class="ui medium image flip" style="margin: auto;" src="https://ci4.googleusercontent.com/proxy/C0wMhtb_MyFsfyNtOmcZ4LlJOnjGYzWkb1D1mUfHhaxtlno_3ldKgD8AFwxuP--A_ddFHkKy5JgFceeJqYCOrhRuvaWxK5Eehg=s0-d-e1-ft#http://www.provisdom.com/img/support/quad_logos.png">
+						</div>
+						<div class="column">
+							<img class="ui medium image flip" style="margin: auto;" src="https://ci4.googleusercontent.com/proxy/bxeOUZWOaB60HqFDlgU7lV_tPFrjWnDjKv47EmTWaptLo339mdcoK0TVEI2gQ56zx_vNfdSxK46CsC2ZQijrhoBqp2yVAQuDCrXsyN3U0uWV2q305FNRLXscdOoM=s0-d-e1-ft#http://www.unixstickers.com/image/data/stickers/binbash/Bash-new.sh.png">
+						</div>
+						<div class="middle centered aligned column">
+							<h1 class="white" style="margin-top: 60px">Familiar With</h1>
+							<h3 class="thin" style="line-height: 1.75">Bash (Unix Shell) </br>
+							XML-Based Languages </br>
+							PHP </br>
+							SQL </br>
+							Node.js</h3>
+						</div>
+					</div>
+				</div>
+				<div class="twelve wide column mobile only">
+					<h1 class="white profile-page__title">Skillset</h1>
+					<div class="ui middle centered aligned grid" style="border-bottom: 1px solid white; margin-top: 5vh">
+						<div class="ten wide middle centered aligned column">
+							<h1 class="white" style="margin-top: 15px">Most Experienced With</h1>
+							<h3 class="thin" style="line-height: 1.75">HTML (Include Jade)</br>
+							CSS (Sass & Stylus)</br>
+							Javascript & JQuery</br>
+							REST API</br>
+							UI/UX Design</h3>
+						</div>
+						<div class="six wide centered middle align column" style="text-align: center;">
+							<span class="helper" style="display: inline-block; height: 50%; vertical-align: middle;"></span>
+								<img class="ui medium image flip" style="margin: auto; vertical-align: middle;" data-src="https://ci4.googleusercontent.com/proxy/C0wMhtb_MyFsfyNtOmcZ4LlJOnjGYzWkb1D1mUfHhaxtlno_3ldKgD8AFwxuP--A_ddFHkKy5JgFceeJqYCOrhRuvaWxK5Eehg=s0-d-e1-ft#http://www.provisdom.com/img/support/quad_logos.png">
+						</div>
+						<div class="six wide column">
+							<span class="helper" style="display: inline-block; height: 50%; vertical-align: middle;"></span>
+							<img class="ui medium image flip" style="margin: auto;" data-src="https://avatars1.githubusercontent.com/u/19519179?v=3&s=400">
+						</div>
+						<div class="ten wide middle centered aligned column">
+							<h1 class="white" style="margin-top: 60px">Familiar With</h1>
+							<h3 class="thin" style="line-height: 1.75">Bash (Unix Shell) </br>
+							XML-Based Languages </br>
+							PHP </br>
+							SQL </br>
+							Node.js</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui centered middle align grid">
+				<div class="eight wide middle centered aligned column computer only" style="text-align: left; margin-bottom: 100px; width: 50%">
+					<h1 class="white" style="margin-top: 60px; margin-bottom: 30px; font-size: 2.5rem">Languages</h1>
+					<div class="ui two column grid">
+						<div class="column">
+							<h3 class="thin" style="display: inline; margin-right: 10px">English (Daily Use)</h3>
+							<div class="ui rating" data-rating="5"></div>
+						</div>
+						<div class="column">
+							<h3 class="thin" style="display: inline; margin-right: 10px">Cantonese (Mother Tongue)</h3>
+							<div class="ui rating" data-rating="5"></div>
+						</div>
+						<div class="column" style="margin-top: -10px;">
+							<h3 class="thin"style="display: inline; margin-right: 10px">Mandarin</h3>
+							<div class="ui rating" data-rating="5"></div>
+						</div>
+						<div class="column" style="margin-top: -10px;">
+							<h3 class="thin" style="display: inline; margin-right: 10px">Spanish (Duolingo)</h3>
+							<div class="ui rating" data-rating="2"></div>
+						</div>
+					</div>
+				</div>
+				<div class="twelve wide middle centered aligned column mobile only" style="text-align: left; margin-bottom: 100px; width: 50%">
+					<h1 class="white" style="margin-top: 60px; margin-bottom: 30px; font-size: 2.5rem">Languages</h1>
+					<div class="ui two column grid">
+						<div class="column">
+							<h3 class="thin" style="display: inline; margin-right: 10px">English (Daily Use)</h3>
+							<div class="ui rating" data-rating="5"></div>
+						</div>
+						<div class="column">
+							<h3 class="thin" style="display: inline; margin-right: 10px">Cantonese (Mother Tongue)</h3>
+							<div class="ui rating" data-rating="5"></div>
+						</div>
+						<div class="column" style="margin-top: -10px;">
+							<h3 class="thin"style="display: inline; margin-right: 10px">Mandarin</h3>
+							<div class="ui rating" data-rating="5"></div>
+						</div>
+						<div class="column" style="margin-top: -10px;">
+							<h3 class="thin" style="display: inline; margin-right: 10px">Spanish (Duolingo)</h3>
+							<div class="ui rating" data-rating="2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section vertical-scrolling education" data-anchor="education">
+			<div class="ui centered middle align grid">
+				<div class="eight wide centered aligned column computer only" style="margin-top: 10vh">
+					<h1 class="blue Education-page__title">Education</h1>
+					<div class="Education-page__education ui grid">
+							<div class="six wide column" style="margin: 0; padding: 0;">
+								<div class="row">
+									<h2>Gems Cambridge International School Abu Dhabi</h2>
+							<h4>September 2013 -</h4>
+						</div>
+					</div>
+					<div class="ten wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h3>New Place, New Life!</h3>
+							<p>I found my favourite hobby - programming when I represented my school to join a mobile app challenge, which then lead to the choice of choosing Art, Business Studies and ICT for my GCSE subjects.</p>
+						</div>
+					</div>
+					<div class="six wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h2>N.T.H.Y.K.Y.L. District Secondary School</h2>
+							<h4>September 2012 - July 2013</h4>
+						</div>
+					</div>
+					<div class="ten wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h3>My First Year as a Secondary Student!</h3>
+							<p>It was the top school in the area with the intense competitive atmosphere - maybe one of my reason why I love my current school :)</p>
+						</div>
+					</div>
+					<div class="six wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h2>Spanish - Duolingo</h2>
+							<h4>Intermediate Level - 46% Fluency (Level 12)</h4>
+						</div>
+					</div>
+					<div class="ten wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h3>I ♥ Spanish!</h3>
+							<p>I have a lot of friends speak Spanish, maybe that's one of the reason I fall in love with it.</br>
+								<a href="https://www.duolingo.com/MarkWong5">Here is my duolingo profile</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fourteen wide centered aligned column mobile only" style="margin-top: 10vh">
+				<h1 class="blue Education-page__title">Education</h1>
+				<div class="Education-page__education ui grid">
+					<div class="six wide column" style="margin: 0; padding: 0;">
+						<div class="row">
+							<h2>Gems Cambridge International School Abu Dhabi</h2>
+							<h4>September 2013 -</h4>
+						</div>
+					</div>
+					<div class="ten wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h3>New Place, New Life!</h3>
+							<p>I found my favourite hobby - programming when I represented my school to join a mobile app challenge, which then lead to the choice of choosing Art, Business Studies and ICT for my GCSE subjects.</p>
+						</div>
+					</div>
+					<div class="six wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h2>N.T.H.Y.K.Y.L. District Secondary School</h2>
+							<h4>September 2012 - July 2013</h4>
+						</div>
+					</div>
+					<div class="ten wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h3>My First Year as a Secondary Student!</h3>
+							<p>It was the top school in the area with the intense competitive atmosphere - maybe one of my reason why I love my current school :)</p>
+						</div>
+					</div>
+					<div class="six wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h2>Spanish - Duolingo</h2>
+							<h4>Intermediate Level - 46% Fluency (Level 12)</h4>
+						</div>
+					</div>
+					<div class="ten wide column" style="margin: 0; padding: 0">
+						<div class="row">
+							<h3>I ♥ Spanish!</h3>
+							<p>I have a lot of friends speak Spanish, maybe that's one of the reason I fall in love with it.</br>
+								<a href="https://www.duolingo.com/MarkWong5">Here is my duolingo profile</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
