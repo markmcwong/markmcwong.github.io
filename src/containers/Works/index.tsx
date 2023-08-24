@@ -54,9 +54,9 @@ const Work = () => {
               projectName={project.projectName}
               date={project.date}
               description={project.description}
-              coverPhoto={Helper.getImgUrl(project.coverPhoto)}
+              coverPhoto={project.coverPhoto}
               projectLink={project.projectLink}
-              icon={Helper.getImgUrl(project.icon)}
+              icon={project.icon}
               projectColor={project.color || colors.neutral[900]}
               backgroundColorControls={backgroundColorControls}
               positionOffset={position}

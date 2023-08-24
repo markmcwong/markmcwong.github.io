@@ -1,7 +1,6 @@
 import "./Card.css"; // Importing the styles
 
 import Card from ".";
-import Helper from "../../utils/helper";
 import { motion } from "framer-motion";
 
 type CardsProps = {
@@ -18,10 +17,7 @@ const Cards: React.FC<CardsProps> = ({ rotationDegree }) => {
         }}
         className="h-fit w-full"
       >
-        <Card
-          image={Helper.getImgUrl("/assets/me/me.jpeg")}
-          borderRadius="15px"
-        />
+        <Card image={"assets/me/me.jpeg"} borderRadius="15px" />
       </motion.div>
       <motion.div
         animate={{
@@ -31,10 +27,7 @@ const Cards: React.FC<CardsProps> = ({ rotationDegree }) => {
         }}
         className="h-fit w-full"
       >
-        <Card
-          image={Helper.getImgUrl("/assets/me/me3.jpg")}
-          borderRadius="15px"
-        />
+        <Card image={"assets/me/me3.jpg"} borderRadius="15px" />
       </motion.div>
       <motion.div
         animate={{
@@ -44,10 +37,7 @@ const Cards: React.FC<CardsProps> = ({ rotationDegree }) => {
         }}
         className="h-fit w-full"
       >
-        <Card
-          image={Helper.getImgUrl("/assets/me/me2.jpg")}
-          borderRadius="15px"
-        />
+        <Card image={"assets/me/me2.jpg"} borderRadius="15px" />
       </motion.div>
     </div>
   );

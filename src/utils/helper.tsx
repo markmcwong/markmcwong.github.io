@@ -3,9 +3,9 @@ class Helper {
     return value * constant;
   };
 
-  static getImgUrl = (name: string) => {
-    return new URL(`${name}`, import.meta.url).href;
-  };
+  // static getImgUrl = (name: string) => {
+  //   return new URL(`./src${name}`, import.meta.url).href;
+  // };
 
   static calcPosition = (value: number): number => {
     return value * 40 + 60;
