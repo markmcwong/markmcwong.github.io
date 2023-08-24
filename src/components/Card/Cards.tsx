@@ -19,7 +19,7 @@ const Cards: React.FC<CardsProps> = ({ rotationDegree }) => {
         className="h-fit w-full"
       >
         <Card
-          image={Helper.getImgUrl("/src/assets/me/me.jpeg")}
+          image={Helper.getImgUrl("/assets/me/me.jpeg")}
           borderRadius="15px"
         />
       </motion.div>
@@ -32,7 +32,7 @@ const Cards: React.FC<CardsProps> = ({ rotationDegree }) => {
         className="h-fit w-full"
       >
         <Card
-          image={Helper.getImgUrl("/src/assets/me/me3.jpg")}
+          image={Helper.getImgUrl("/assets/me/me3.jpg")}
           borderRadius="15px"
         />
       </motion.div>
@@ -45,7 +45,7 @@ const Cards: React.FC<CardsProps> = ({ rotationDegree }) => {
         className="h-fit w-full"
       >
         <Card
-          image={Helper.getImgUrl("/src/assets/me/me2.jpg")}
+          image={Helper.getImgUrl("/assets/me/me2.jpg")}
           borderRadius="15px"
         />
       </motion.div>
