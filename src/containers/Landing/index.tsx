@@ -3,6 +3,7 @@ import "./Landing.css"; // Importing the styles
 import { useEffect, useState } from "react";
 
 import Cards from "../../components/Card/Cards";
+import Helper from "../../utils/helper";
 import Profile from "../Profile";
 import { useScroll } from "framer-motion";
 
@@ -10,7 +11,7 @@ const AboutMeSection: React.FC<{ rotationDegree: number }> = ({
   rotationDegree,
 }) => {
   return (
-    <div className="sm:col-span-3 col-span-3 sm:flex-row-reverse flex-col w-100 grid grid-cols-5 items-center sm:mx-36">
+    <div className="sm:col-span-3 col-span-3 sm:flex-row-reverse flex-col w-100 grid grid-cols-5 items-center sm:mx-18 lg:mx-24 2xl:mx-36 2xl:mb-24">
       <div className="col-span-5 sm:col-span-3 mb-2 sm:mb-0">
         <Cards rotationDegree={rotationDegree} />
       </div>
@@ -25,14 +26,9 @@ const Landing = () => {
   const { scrollYProgress } = useScroll();
   const [rotationDegree, setRotationDegree] = useState(0);
 
-  const calculateRotation = (value: number, constant: number) =>
-    value * constant;
-
   useEffect(() => {
-    // Attach a listener to scrollYProgress
     return scrollYProgress.onChange((value) => {
-      // Calculate and update the rotation degree
-      setRotationDegree(calculateRotation(value, 10));
+      setRotationDegree(Helper.calculateRotation(value, 10));
     });
   }, [scrollYProgress]);
 

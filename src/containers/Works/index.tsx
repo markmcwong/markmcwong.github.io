@@ -2,6 +2,7 @@ import { useAnimation, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Helper from "../../utils/helper";
 import Project from "../../components/Project";
 import Projects from "./description.json";
 import Section from "../../components/Section";
@@ -12,19 +13,11 @@ const Work = () => {
   const { scrollYProgress } = useScroll();
   const [position, setPosition] = useState(0);
 
-  const getImgUrl = (name: string) => {
-    return new URL(`${name}`, import.meta.url).href;
-  };
-
-  const calcPosition = (value: number): number => {
-    return value * 40 + 60;
-  };
-
   useEffect(() => {
     // Attach a listener to scrollYProgress
     return scrollYProgress.onChange((value) => {
       // Calculate and update the rotation degree
-      setPosition(calcPosition(value));
+      setPosition(Helper.calcPosition(value));
     });
   }, [scrollYProgress]);
 
@@ -61,9 +54,9 @@ const Work = () => {
               projectName={project.projectName}
               date={project.date}
               description={project.description}
-              coverPhoto={getImgUrl(project.coverPhoto)}
+              coverPhoto={Helper.getImgUrl(project.coverPhoto)}
               projectLink={project.projectLink}
-              icon={getImgUrl(project.icon)}
+              icon={Helper.getImgUrl(project.icon)}
               projectColor={project.color || colors.neutral[900]}
               backgroundColorControls={backgroundColorControls}
               positionOffset={position}
