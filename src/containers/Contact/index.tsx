@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8">
+    <div className="py-12 px-4 sm:px-6 lg:px-8" id="contact">
       <div className="max-w-xl mx-auto text-center md:max-w-5xl 2xl:max-w-7xl flex-col flex items-center">
         <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:leading-none lg:text-title lg:w-2/3 font-subtitle uppercase">
           Reach out For a Chat
