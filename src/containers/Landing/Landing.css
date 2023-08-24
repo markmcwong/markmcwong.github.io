@@ -1,0 +1,9 @@
+.card-container {
+  position: relative;
+}
+
+.card-container > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

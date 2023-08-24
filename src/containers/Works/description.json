@@ -1,0 +1,20 @@
+[{
+        "projectName": "Customer Review Analysis",
+        "date": "May - Aug 23",
+        "description": "DELL Technologies",
+        "coverPhoto": "/src/assets/project1.jpg",
+        "projectLink": "https://example.com/project-link",
+        "icon": "/src/assets/icons/dell.png",
+        "color": "rgb(2 132 199)"
+    },
+    {
+        "projectName": "ML in Demand Forecasting",
+        "date": "May - Nov 22",
+        "description": "Shopee",
+        "coverPhoto": "/src/assets/project2.jpg",
+        "projectLink": "https://example.com/project-link",
+        "icon": "/src/assets/icons/shopee.png",
+        "color": "rgb(245 158 11)"
+
+    }
+]
