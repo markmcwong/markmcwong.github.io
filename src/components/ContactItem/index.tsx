@@ -72,11 +72,10 @@ const ContactItem: React.FC<ContactProps> = ({
           size="xl"
           className="z-10"
         />
-        {/* Sliding Rectangle */}
         <motion.div
           className="sliding-rectangle absolute top-0 left-0 right-0 h-full bg-black z-0"
-          initial={{ y: "-100%" }} // Start above the container
-          animate={controls} // Control the animation using the controls
+          initial={{ y: "-100%" }}
+          animate={controls}
         />
       </motion.div>
     </>

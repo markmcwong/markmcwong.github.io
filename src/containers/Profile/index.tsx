@@ -17,7 +17,6 @@ const Profile = () => {
         <a className="text-orange-400 normal-case">LLMs</a> to solve real-world
         problems.
       </div>
-      {/* <div>Contact Me</div> */}
     </div>
   );
 };

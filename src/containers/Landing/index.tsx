@@ -61,7 +61,6 @@ const Landing = () => {
           <div className="col-span-5 sm:col-span-3 text-7xl sm:text-10xl font-semibold font-subtitle text-center sm:w-full w-screen sm:ml-12 text-white">
             <small className="sm:hidden">{"\n"}</small>
             Scientist
-            {/* <code>Data Scientist</code> */}
           </div>
         </div>
         <div className="grid grid-cols-2 my-6 sm:my-2 ml-2 text-xs sm:text-sm whitespace-pre-wrap uppercase sm:hidden">

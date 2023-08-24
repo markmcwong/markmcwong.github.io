@@ -14,7 +14,6 @@ const Contact = () => {
           Feel free to reach out via any of the following methods:
         </p>
         <div className="mt-6 justify-center px-6 w-full grid grid-cols-6 sm:gap-6 space">
-          {/* space-x-0 sm:space-x-6 */}
           <ContactItem
             name="Email"
             link={"mailto:markwongmanchun@gmail.com"}

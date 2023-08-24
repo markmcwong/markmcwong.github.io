@@ -17,7 +17,6 @@ const Card: React.FC<CardProps> = ({
   children,
   className = "",
 }) => {
-  // Style object with background image and border radius
   const cardStyle = {
     backgroundImage: image ? `url(${image})` : undefined,
     borderRadius,
@@ -25,9 +24,7 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div className={`card ${className}`} style={cardStyle}>
-      <div className="card-content">
-        {children} {/* Render any children JSX elements */}
-      </div>
+      <div className="card-content">{children}</div>
     </div>
   );
 };
