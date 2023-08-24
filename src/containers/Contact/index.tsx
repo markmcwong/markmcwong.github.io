@@ -1,4 +1,7 @@
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import ContactItem from "../../components/ContactItem";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -15,21 +18,21 @@ const Contact = () => {
           <ContactItem
             name="Email"
             link={"mailto:markwongmanchun@gmail.com"}
-            icon={"envelope"}
+            icon={faEnvelope}
             description="markwongmanchun@gmail.com"
             className="col-span-6 sm:col-span-2"
           />
           <ContactItem
             name="Github"
             link={"https://github.com/markmcwong"}
-            icon="fa-brands fa-github"
+            icon={faGithub}
             description="@markmcwong"
             className="col-span-6 sm:col-span-2"
           />
           <ContactItem
             name="Linkedin"
             link={"https://linkedin.com/in/markmcwong"}
-            icon="fa-brands fa-linkedin"
+            icon={faLinkedin}
             description="@markmcwong"
             className="col-span-6 sm:col-span-2"
           />

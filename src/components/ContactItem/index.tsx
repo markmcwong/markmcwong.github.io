@@ -1,15 +1,20 @@
 import "./ContactItem.css";
 
+import {
+  IconDefinition,
+  IconName,
+  IconPrefix,
+  IconProp,
+} from "@fortawesome/fontawesome-svg-core";
 import { motion, useAnimation } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { useState } from "react";
 
 type ContactProps = {
   name: string;
   link: string;
-  icon: IconProp;
+  icon: IconProp | [IconPrefix, IconName] | IconDefinition;
   className?: string;
   description?: string;
 };
